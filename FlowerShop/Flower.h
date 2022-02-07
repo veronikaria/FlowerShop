@@ -1,4 +1,5 @@
-#pragma once
+#ifndef FLOWER_H
+#define FLOWER_H
 #include <iostream>
 using namespace std;
 
@@ -28,3 +29,6 @@ private:
 	int quantity;
 	double deliveryRate;
 };
+
+
+#endif

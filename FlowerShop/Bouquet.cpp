@@ -36,3 +36,20 @@ double Bouquet::totalBouquetPrice()
 	}
 	return result;
 }
+
+
+
+std::ostream& operator << (std::ostream& out, Bouquet& bouquet)
+{
+	out << "\tAbout Bouquet. There is " << bouquet.getQuantity() << " flowers in Bouquet. " << endl;
+	Flower* flowers = bouquet.getFlowers();
+	for (size_t i = 0; i < bouquet.getQuantity(); i++)
+	{
+		out << flowers[i];
+	}
+	out << "TOTAL PRICE: " << bouquet.totalBouquetPrice() << endl;
+
+	return out;
+}
+
+

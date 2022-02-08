@@ -22,6 +22,8 @@ public:
 	void setQuantity(int quantity);
 	double getDeliveryRate();
 	void setDeliveryRate(double deliveryRate);
+	friend std::ostream& operator << (std::ostream& out, Flower& flower);
+	friend bool operator <(Flower& lhs, Flower& rhs);
 private:
 	int height;
 	int size;

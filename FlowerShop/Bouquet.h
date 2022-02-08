@@ -15,6 +15,7 @@ public:
 	Flower* getFlowers();
 	double totalBouquetPrice();
 	~Bouquet();
+	friend std::ostream& operator << (std::ostream& out, Bouquet& bouquet);
 };
 
 

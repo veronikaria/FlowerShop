@@ -86,3 +86,16 @@ void Flower::setDeliveryRate(double deliveryRate)
 	this->deliveryRate = deliveryRate;
 }
 
+std::ostream& operator << (std::ostream& out, Flower& flower)
+{
+	out << "About Flower. Height: " << flower.getHeight() << " and size: " << flower.getSize() << endl;
+	out << "Color: " << flower.getColor() << " and delivery rate: " << flower.getDeliveryRate() << endl;
+	out << "Price: " << flower.getPrice() << " and quantity: " << flower.getQuantity() << endl;
+	return out;
+}
+
+
+bool operator <(Flower& lhs, Flower& rhs)
+{
+	return rhs.price < lhs.price;
+}

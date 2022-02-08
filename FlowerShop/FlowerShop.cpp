@@ -1,5 +1,5 @@
 #include "FlowerShop.h"
-
+#include <algorithm>
 
 FlowerShop::FlowerShop()
 {
@@ -49,7 +49,28 @@ void FlowerShop::showAllFlowers()
 {
 	for (size_t i = 0; i < this->ind_flower; i++)
 	{
+		cout << this->flowers[i];
 	}
+}
+
+
+void FlowerShop::topMostExpensiveFlowers(int quantity)
+{
+	Flower* flowers = this->flowers;
+	sort(flowers, flowers + this->ind_flower);
+	cout << "TOP " << quantity << " expensice flowers : \n";
+
+	for (size_t i = 0; i < quantity; i++)
+	{
+		cout << flowers[i];
+	}
+}
+
+void FlowerShop::mostExpensiveFlower()
+{
+	Flower* flowers = this->flowers;
+	sort(flowers, flowers + this->ind_flower);
+	cout << "The most expensice flower: \n" << flowers[0];
 }
 
 
@@ -64,3 +85,18 @@ void FlowerShop::deleteFlowerFromShop(int index)
 	}
 
 }
+
+
+std::ostream& operator << (std::ostream& out, FlowerShop& shop)
+{
+	out << "\tAbout Flower Shop. There is a Flower Shop." << endl;
+	Flower* flowers = shop.getFlowers();
+	for (size_t i = 0; i < shop.getQuantity(); i++)
+	{
+		out << flowers[i];
+	}
+
+	return out;
+}
+
+

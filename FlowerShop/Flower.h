@@ -1,6 +1,7 @@
 #ifndef FLOWER_H
 #define FLOWER_H
 #include <iostream>
+#define SIZE 100
 using namespace std;
 
 class Flower

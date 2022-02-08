@@ -1,5 +1,4 @@
 #include "Bouquet.h"
-#define SIZE 100
 
 Bouquet::Bouquet()
 {

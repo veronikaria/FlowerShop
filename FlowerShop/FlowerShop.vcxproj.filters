@@ -27,9 +27,15 @@
     <ClCompile Include="Bouquet.cpp">
       <Filter>Resource Files</Filter>
     </ClCompile>
+    <ClCompile Include="FlowerShop.cpp">
+      <Filter>Resource Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Flower.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FlowerShop.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

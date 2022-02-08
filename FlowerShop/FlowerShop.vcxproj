@@ -142,10 +142,12 @@
     <ClCompile Include="Bouquet.h" />
     <ClCompile Include="Bouquet.cpp" />
     <ClCompile Include="Flower.cpp" />
+    <ClCompile Include="FlowerShop.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Flower.h" />
+    <ClInclude Include="FlowerShop.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
